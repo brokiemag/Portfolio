@@ -1,0 +1,415 @@
+
+body{
+	background-image: url('../img/background.jpg') no-repeat center center fixed;
+	-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.Neon {
+    position: absolute;
+    color: #fff;
+    display: block;
+    left: 0;
+    padding: 0 50px;
+    text-shadow: 0 0 20px #6c5ce7;
+    transition: .5s;
+}
+h1.Neon{
+	top: 35%;
+	font-size: 7em;
+}
+h4.Neon{
+	top: 43%;
+	font-size: 4em;
+}
+h1.Neon:after,h4.Neon:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 50px;
+	z-index: -1;
+	color: #6c5ce7;
+	filter: blur(15px);
+}
+h1.Neon:before,h4.Neon:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #6c5ce7;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}
+.colorplate {
+    position: absolute;
+    width: 450px;
+    top: 25%;
+    left: 700px;
+    border-radius: 20px;
+}
+.colorplate ul {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    -webkit-transform: rotate(-90deg);
+}
+
+.colorplate ul li {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+    list-style-type: none;
+    position: relative;
+    transition: .5s;
+}
+.colorplate ul li:hover{
+	transform: rotate(360deg);
+	transition: .5s;
+}
+.colorplate ul li:hover:before {
+    content: '\f110';
+    font-family: 'fontAwesome' !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -17px;
+    transition: .5s;
+}
+.clear-fix:after{
+	content: '';
+	clear: both;
+	display: table;
+}
+.drop-down {
+    padding: 10px 20px;
+    color: #fff;
+}
+.drop-down span{
+	display: inline-block;
+	font-size: 2em;
+}
+span.icon {
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.colorplate ul li:nth-child(1){
+	background: #55efc4;
+}
+.colorplate ul li:nth-child(2){
+	background: #e84393;
+}
+.colorplate ul li:nth-child(3){
+	background: #6c5ce7;
+}
+.colorplate ul li:nth-child(4){
+	background: #f9ca24;
+}
+.colorplate ul li:nth-child(5){
+	background: #ff2f2f;
+}
+.colorplate ul li:nth-child(6){
+	background: #6ab04c;
+}
+.colorplate ul li:nth-child(7){
+	background: #fa8231;
+}
+.colorplate ul li:nth-child(1):hover:before {
+	color: #55efc4;
+}
+.colorplate ul li:nth-child(2):hover:before {
+	color: #e84393;
+}
+.colorplate ul li:nth-child(3):hover:before {
+	color: #6c5ce7;
+}
+.colorplate ul li:nth-child(4):hover:before {
+	color: #f9ca24;
+}
+.colorplate ul li:nth-child(5):hover:before {
+	color: #ff2f2f;
+}
+.colorplate ul li:nth-child(6):hover:before {
+	color: #6ab04c;
+}
+.colorplate ul li:nth-child(7):hover:before {
+	color: #fa8231;
+}
+/*Seagreen*/
+.seagreen {
+    text-shadow: 0 0 20px #55efc4;
+}
+h1.seagreen:after,h4.seagreen:after{
+	color: #55efc4;
+}
+h1.seagreen:before,h4.seagreen:before{
+	background: #55efc487;
+}
+/*pink*/
+.pink {
+    text-shadow: 0 0 20px #e84393;
+}
+h1.pink:after,h4.pink:after{
+	color: #e84393;
+}
+h1.pink:before,h4.pink:before{
+	background: #e8439387;
+}
+/*purple*/
+.purple {
+    text-shadow: 0 0 20px #6c5ce7;
+}
+h1.purple:after,h4.purple:after{
+	color: #6c5ce7;
+}
+h1.purple:before,h4.purple:before{
+	background: #6c5ce787;
+}
+/*yellow*/
+.yellow {
+    text-shadow: 0 0 20px #f9ca24;
+}
+h1.yellow:after,h4.yellow:after{
+	color: #f9ca24;
+}
+h1.yellow:before,h4.yellow:before{
+	background: #f9ca2487;
+}
+/*red*/
+.red {
+    text-shadow: 0 0 20px #ff2f2f;
+}
+h1.red:after,h4.red:after{
+	color: #ff2f2f;
+}
+h1.red:before,h4.red:before{
+	background: #ff2f2f87;
+}
+/*green*/
+.green {
+    text-shadow: 0 0 20px #6ab04c;
+}
+h1.green:after,h4.green:after{
+	color: #6ab04c;
+}
+h1.green:before,h4.green:before{
+	background: #6ab04c87;
+}
+/*orange*/
+.orange {
+    text-shadow: 0 0 20px #fa8231;
+}
+h1.orange:after,h4.orange:after{
+	color: #fa8231;
+}
+h1.orange:before,h4.orange:before{
+	background: #fa823187;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  padding-right: 100px;
+  perspective: 1000px;
+  backdrop-filter: blur(10px);
+}
+.container {
+  width: 25rem;
+  height:180rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  height: 40vh;
+  width: 30rem;
+  border-radius: 30px;
+  padding: 0rem 2.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  right: 0px
+}
+.sneaker {
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  top:10rem;
+  height: 20rem;
+  width: 30rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0rem;
+  color: #000000;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.wrapper button {
+  padding: 0.5rem 1rem;
+  background: none;
+  size: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+.purchase {
+  margin-top: 2rem;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+  width: 100%;
+  padding: 0.5rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+.homepageconference .container {
+  padding-left: 12%;
+  }
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+html,body{
+  background-position: center top;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: url('mobile_profile.jpg');
+  background-repeat: no-repeat;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+            
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 150px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #ff0000;
+}
