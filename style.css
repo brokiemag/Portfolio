@@ -5,7 +5,7 @@ html,body{
   width: 100%;
   place-items: center;
   background-image: url('profile.jpg');
-  background-size: 120%;
+  background-size: 105%;
   background-repeat: no-repeat;
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
