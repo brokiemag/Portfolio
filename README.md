@@ -1,2 +1,0 @@
-# brokiemag.github.io
-portfolio
